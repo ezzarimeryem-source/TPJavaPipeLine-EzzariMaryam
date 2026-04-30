@@ -2,7 +2,7 @@
     agent {
         docker {
             image 'my-maven-git:latest'
-            args '-v C:\Users\user/.m2:/root/.m2'
+            args '--volume /root/.m2:/root/.m2'
         }
     }
     stages {
